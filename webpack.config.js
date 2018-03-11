@@ -17,7 +17,8 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, distributionDir),
-        filename: '[name].bundle.js'
+        filename: '[name].bundle.js',
+        publicPath: "/"
     },
     devtool: 'inline-source-map',
     module: {
@@ -52,6 +53,7 @@ module.exports = {
         new ExtractTextPlugin("app.bundle.css"),
         new HtmlWebpackPlugin({
             template: "index.html"
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ]
 };

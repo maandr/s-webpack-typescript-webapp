@@ -11,6 +11,7 @@
     "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^5.1.4",
     "css-loader": "^0.28.10",
+    "express": "^4.16.2",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.0.6",
@@ -22,10 +23,15 @@
     "typescript": "^2.7.2",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.11",
-    "webpack-dev-server": "^3.1.1"
+    "webpack-dev-middleware": "^3.0.1",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-hot-middleware": "^2.21.2"
   },
   "scripts": {
     "refresh": "rimraf node_modules && yarn install",
-    "build": "npx webpack"
+    "build": "npx webpack",
+    "prestart": "yarn build",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "dev": "cross-env NODE_ENV=development node server.js"
   }
 }
