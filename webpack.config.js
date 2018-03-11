@@ -23,7 +23,7 @@ module.exports = {
         filename: "[name].bundle.js",
         publicPath: "/"
     },
-    devtool: "#sourcemap",
+    devtool: "source-map",
     module: {
         rules: [
             {
@@ -43,7 +43,7 @@ module.exports = {
             },
             {
                 test: /\.ts?$/,
-                use: "ts-loader",
+                use: "awesome-typescript-loader",
                 exclude: /node_modules/
             },
         ]

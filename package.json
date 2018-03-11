@@ -25,6 +25,7 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "awesome-typescript-loader": "^5.0.0-1",
     "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^5.1.4",
     "css-loader": "^0.28.10",
@@ -35,7 +36,6 @@
     "rimraf": "^2.6.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
-    "ts-loader": "^4.0.1",
     "typescript": "^2.7.2",
     "uglifyjs-webpack-plugin": "^1.2.3",
     "webpack": "^4.1.1",

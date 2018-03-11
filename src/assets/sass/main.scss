@@ -1,13 +1,13 @@
 @import "typography";
 
-$primary-color: #333;
+$primary-color: #efefef;
 
 body {
   background-color: $primary-color;
 }
 
 #logo {
-  width: 190px;
+  width: 180px;
   height: 190px;
   background: url('../images/logo.svg') no-repeat;
 }
