@@ -1,6 +1,6 @@
 import "../assets/sass/main.scss"
 
-import * as Math from "./lib/math"
+import * as Math from "../lib/math"
 
 console.log("Hello from main.")
 console.log("NODE_ENV: %s", process.env.NODE_ENV)

@@ -16,7 +16,7 @@ module.exports = {
     context: path.resolve(__dirname, sourceDir),
     entry: {
         app: ["./app/main.ts"],
-        "math.lib": "./app/lib/math.ts"
+        "math.lib": "./lib/math.ts"
     },
     output: {
         path: path.resolve(__dirname, distributionDir),
