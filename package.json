@@ -7,15 +7,22 @@
   "author": "Mats Andresen <mats.andresen@gmx.de>",
   "license": "MIT",
   "private": false,
+  "docker-user": "maandr",
+  "docker-container-name": "webapp_starter",
   "scripts": {
     "refresh": "rimraf node_modules && yarn install",
     "build": "npx webpack --config webpack.config.js",
     "prestart": "yarn build",
     "start": "node server.js",
-    "dev": "cross-env NODE_ENV=development node webpack.devserver.js"
+    "dev": "cross-env NODE_ENV=development node webpack.devserver.js",
+    "docker-build": "./scripts/docker-build.sh",
+    "docker-up": "./scripts/docker-run.sh -d -p 3000:3000",
+    "docker-down": "./scripts/docker-remove.sh -fv",
+    "docker-push": "./scripts/docker-push.sh"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^4.0.1",

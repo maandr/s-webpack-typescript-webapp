@@ -1,0 +1,10 @@
+ node_modules
+ dist
+ scripts
+
+ yarn.lock
+ webpack.devserver.js
+ Dockerfile
+ README.md
+ yarn-error.log
+ .*
