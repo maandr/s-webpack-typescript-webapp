@@ -51,12 +51,6 @@ module.exports = {
     resolve: {
         extensions: [ ".ts", ".js" ]
     },
-    optimization: {
-        splitChunks: {
-            name: "vendor",
-            filename: "assets/vendor.js"
-        }
-    },
     plugins: getPlugins()
 }
 
