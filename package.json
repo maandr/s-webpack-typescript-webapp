@@ -11,7 +11,7 @@
   "docker-container-name": "webapp_starter",
   "scripts": {
     "refresh": "rimraf node_modules && yarn install",
-    "build": "npx webpack --config webpack.config.js",
+    "build": "npx webpack --mode production --config webpack.config.js",
     "prestart": "yarn build",
     "start": "node server.js",
     "dev": "cross-env NODE_ENV=development node webpack.devserver.js",
