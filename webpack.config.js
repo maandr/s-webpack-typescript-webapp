@@ -27,11 +27,6 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.ts?$/,
-                use: "awesome-typescript-loader",
-                exclude: /node_modules/
-            },
-            {
                 test: /\.(s*)css$/,
                 use: ExtractTextPlugin.extract({
                     use: [{
@@ -45,7 +40,12 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
                 use: [ "file-loader" ]
-            }
+            },
+            {
+                test: /\.ts?$/,
+                use: "ts-loader",
+                exclude: /node_modules/
+            },
         ]
     },
     resolve: {
