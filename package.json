@@ -1,0 +1,31 @@
+{
+  "name": "s-webpack-typescript-webapp",
+  "version": "1.0.0",
+  "description": "A starter project skeleton for web-app using webpack and typescript.",
+  "main": "index.js",
+  "repository": "git@github.com:maandr/s-webpack-typescript-webapp.git",
+  "author": "Mats Andresen <mats.andresen@gmx.de>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.1.4",
+    "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.0.6",
+    "node-sass": "^4.7.2",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "ts-loader": "^4.0.1",
+    "typescript": "^2.7.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "scripts": {
+    "refresh": "rimraf node_modules && yarn install",
+    "build": "npx webpack"
+  }
+}
