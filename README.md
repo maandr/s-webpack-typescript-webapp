@@ -2,6 +2,8 @@
 
 This repository contains a starter project prepared and configured to use `webpack` and `typescript` to develop a web application.
 
+[![Build Status](https://travis-ci.org/maandr/s-webpack-typescript-webapp.svg?branch=master)](https://travis-ci.org/maandr/s-webpack-typescript-webapp)
+
 ## Usage
 
 There are several npm scripts pre-configured that can be used for convenience.
