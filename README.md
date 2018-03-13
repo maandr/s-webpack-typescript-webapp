@@ -3,7 +3,6 @@
 This repository contains a starter project prepared and configured to use `webpack` and `typescript` to develop a web application.
 
 [![Build Status](https://travis-ci.org/maandr/s-webpack-typescript-webapp.svg?branch=master)](https://travis-ci.org/maandr/s-webpack-typescript-webapp)
-
 [![Coverage Status](https://coveralls.io/repos/github/maandr/s-webpack-typescript-webapp/badge.svg?branch=master)](https://coveralls.io/github/maandr/s-webpack-typescript-webapp?branch=master)
 
 ## Usage
