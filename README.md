@@ -4,6 +4,8 @@ This repository contains a starter project prepared and configured to use `webpa
 
 [![Build Status](https://travis-ci.org/maandr/s-webpack-typescript-webapp.svg?branch=master)](https://travis-ci.org/maandr/s-webpack-typescript-webapp)
 
+[![Coverage Status](https://coveralls.io/repos/github/maandr/s-webpack-typescript-webapp/badge.svg?branch=master)](https://coveralls.io/github/maandr/s-webpack-typescript-webapp?branch=master)
+
 ## Usage
 
 There are several npm scripts pre-configured that can be used for convenience.
@@ -14,6 +16,18 @@ yarn install
 
 # Refresh dependencies (remove and re-install)
 yarn refresh
+
+# Removes all generated project files
+yarn clean
+
+# Runs the project tests
+yarn test
+
+# Runs the project tests in watch-mode
+yarn test --watch
+
+# Runs the project tests and provides code-coverage information
+yarn test:coverage
 
 # Build the project
 yarn build
@@ -59,4 +73,14 @@ It will tag the image with without version, with the `version` configured in `pa
 
 ```bash
 yarn docker-push
+```
+
+## Further Setup
+
+### Code coverage
+
+In order to send code-coverage reports after local coverage runs to [coverall.io](https://coverall.io), a `.coveralls.yml` file needs to be created within the root directory of the project. In this file the access token for the coveralls repository must be specified. The token can be obtained from [coverall.io](https://coverall.io) website.
+
+```yml
+repo_token: <your_repo_token>
 ```
